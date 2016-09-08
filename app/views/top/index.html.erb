@@ -1,0 +1,36 @@
+<h1>データベースを操作する</h1>
+<h2>Article.all</h2>
+<%= render 'all' %>
+
+<h2>Article.first</h2>
+<%= render 'first' %>
+
+<h2>Article.last</h2>
+<%= render 'last' %>
+
+<h2>Article.find(1)</h2>
+<%= render 'find' %>
+
+<h2>Article.where(title: "title2")</h2>
+<%= render 'where1' %>
+
+<h2>Article.where("id >= 2")</h2>
+<%= render 'where2' %>
+
+<h2>Article.where(title: "title2", author: "B")</h2>
+<%= render 'where3' %>
+
+<h2>Article.find_by(title: "title2")</h2>
+<%= render 'find_by1' %>
+
+<h2>Article.find_by(title: "title2", author: "B")</h2>
+<%= render 'find_by2' %>
+
+<h2>Article.where(author: "A").limit(3)</h2>
+<%= render 'find_by3' %>
+
+<h2>Article.where("title = ?", "title1")</h2>
+<%= render 'placeholder1' %>
+
+<h2>Article.where("title = ? or title = ?", "title1", "title2")</h2>
+<%= render 'placeholder2' %>

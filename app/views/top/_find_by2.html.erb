@@ -1,0 +1,23 @@
+<% article = @articles.find_by(title: "title2", author: "B") %>
+
+<table border="1">
+  <tr>
+    <th>id</th><th>title</th><th>body</th><th>author</th>
+  </tr>
+  <tr>
+    <% if article %>
+      <td>
+        <%= article.id %>
+      </td>
+      <td>
+        <%= article.title %>
+      </td>
+      <td>
+        <%= article.body %>
+      </td>
+      <td>
+        <%= article.author %>
+      </td>
+    <% end %>
+  </tr>
+</table>
